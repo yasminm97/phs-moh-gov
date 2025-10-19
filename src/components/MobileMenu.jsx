@@ -3,11 +3,11 @@ import { Home, IdCard, Inbox, Send, Calendar, User } from "lucide-react";
 
 const mobileMenuItems = [
   { name: "الرئيسية", path: "/home", icon: <Home size={22} /> },
-  { name: "البطاقات", path: "/cards/add", icon: <IdCard size={22} /> },
-  { name: "الواردة", path: "/incoming/add-letter", icon: <Inbox size={22} /> },
-  { name: "الصادرة", path: "/outgoing/add-letter", icon: <Send size={22} /> },
+  { name: "البطاقات", path: "/cards", icon: <IdCard size={22} /> },
+  { name: "الواردة", path: "/incoming", icon: <Inbox size={22} /> },
+  { name: "الصادرة", path: "/outgoing", icon: <Send size={22} /> },
   { name: "الإجازات", path: "/permissions", icon: <Calendar size={22} /> },
-  { name: "خروج", path: "/signout", icon: <User size={22} /> },
+  { name: "خروج", path: "/signIn", icon: <User size={22} /> },
 ];
 
 export default function MobileMenu() {

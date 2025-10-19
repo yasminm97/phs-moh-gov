@@ -20,8 +20,8 @@ export default function LetterDetails({ letter }) {
   return (
     <Layout>
       <div dir="rtl" className="p-8 bg-gray-50 min-h-screen">
-        <div className="bg-white shadow rounded-lg p-8 flex gap-8">
-          {/* ملف / مرفق */}
+        <div className="bg-white shadow rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          {/* attachment */}
           <div className="flex-1 flex items-center justify-center border rounded-lg bg-gray-50">
             {data.fileUrl ? (
               <a
@@ -30,15 +30,15 @@ export default function LetterDetails({ letter }) {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline font-medium"
               >
-                Download DOCX File
+                تحميل الملف
               </a>
             ) : (
               <p className="text-gray-400">لا يوجد مرفق</p>
             )}
           </div>
 
-          {/* تفاصيل الكتاب */}
-          <div className="w-1/2 space-y-3 text-sm">
+          {/* details */}
+          <div className="w-full md:w-1/2 space-y-3 text-sm">
             <p>
               <span className="font-medium">رقم البطاقة:</span> {data.id}
             </p>
@@ -72,7 +72,7 @@ export default function LetterDetails({ letter }) {
           </div>
         </div>
 
-        {/* الأزرار */}
+        {/* buttons */}
         <div className="flex justify-between mt-8">
           <button
             onClick={() => router.back()}
@@ -82,13 +82,13 @@ export default function LetterDetails({ letter }) {
           </button>
           <div className="flex gap-4">
             <button
-              onClick={() => router.push(`/letters/${data.id}/edit`)}
+              onClick={() => router.push(`#`)}
               className="px-6 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition"
             >
               تعديل
             </button>
             <button
-              onClick={() => alert("إضافة ملحق")}
+              onClick={() => router.push(`#`)}
               className="px-6 py-2 rounded-lg bg-ministry-green text-white hover:bg-ministry-green/90 transition"
             >
               إضافة ملحق

@@ -3,6 +3,9 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/home": "pages/home.js",
-  "/permissions/add-new-certificate": "pages/permissions/add-new-certificate.js",
-  "/": "pages/index.js"
+  "/cards": "pages/cards.js",
+  "/letter-details": "pages/letter-details.js",
+  "/incoming": "pages/incoming.js",
+  "/outgoing": "pages/outgoing.js",
+  "/permissions": "pages/permissions.js"
 }
