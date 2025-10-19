@@ -1,6 +1,13 @@
+import CardTable from "@/components/CardTable";
 import Layout from "@/components/Layout";
+import SearchBar from "@/components/SearchBar";
 import letters from "@/data/letters.json";
+
 export default function IncomingLetters() {
+  const letterColumns = [
+    { key: "number", label: "رقم الكتاب" },
+    { key: "subject", label: "الموضوع" },
+  ];
   return (
     <Layout>
       <section className="bg-white rounded-2xl shadow p-6" dir="rtl">
@@ -29,33 +36,12 @@ export default function IncomingLetters() {
             </div>
           </div>
         </div>
+        <div dir="ltr" className="flex justify-between">
+          <SearchBar />
+        </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-right border-separate border-spacing-y-2">
-            <thead>
-              <tr className="text-sm text-gray-600 border-b">
-                <th className="px-4 py-2">رقم الكتاب</th>
-                <th className="px-4 py-2">الموضوع</th>
-              </tr>
-            </thead>
-            <tbody>
-              {letters?.map((letter, idx) => (
-                <tr
-                  key={idx}
-                  className="bg-gray-50 hover:bg-gray-100 rounded-lg"
-                >
-                  <td className="px-4 py-2">{letter.number}</td>
-                  <td className="px-4 py-2">{letter.subject}</td>
-                </tr>
-              )) || (
-                <tr>
-                  <td colSpan={2} className="text-center py-4 text-gray-400">
-                    لا توجد كتب حالياً
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
+          <CardTable rows={letters} columns={letterColumns} />
         </div>
       </section>
     </Layout>

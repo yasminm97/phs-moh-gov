@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/outgoing": "pages/outgoing.js",
+  "/outgoing/add-new-letter": "pages/outgoing/add-new-letter.js",
+  "/reports": "pages/reports.js",
+  "/permissions": "pages/permissions.js",
+  "/permissions/add-new-permission": "pages/permissions/add-new-permission.js",
+  "/permissions/add-new-certificate": "pages/permissions/add-new-certificate.js",
+  "/branches/add-new-branch": "pages/branches/add-new-branch.js",
+  "/branches/add-new-sub-branch": "pages/branches/add-new-sub-branch.js",
+  "/cards": "pages/cards.js",
+  "/letter-details": "pages/letter-details.js"
+}

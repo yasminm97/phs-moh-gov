@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "../../public/logo/logo.png";
 // import Profile from "../../public/profile.png";
-import { UserCircle } from "lucide-react";
+import { User } from "lucide-react";
 
 export default function HeaderBar() {
   const user = {
@@ -12,7 +12,7 @@ export default function HeaderBar() {
 
   return (
     <div
-      className="flex flex-col md:flex-row items-center justify-between gap-4"
+      className="flex flex-col md:flex-row items-center justify-between "
       dir="rtl"
     >
       <div className="flex flex-row items-center gap-3">
@@ -31,8 +31,8 @@ export default function HeaderBar() {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
-        <UserCircle size={40} className="text-ministry-green" />
+      <div className="flex items-center gap-2">
+        <User size={30} className="text-ministry-green" />
         <div className="text-right">
           <p className="font-semibold text-ministry-charcoal">{user.name}</p>
           <p className="text-xs text-gray-500">{user.role}</p>

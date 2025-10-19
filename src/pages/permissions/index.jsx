@@ -1,6 +1,7 @@
 import CardHeader from "@/components/CardHeader";
 import CardTable from "@/components/CardTable";
 import Layout from "@/components/Layout";
+import SearchBar from "@/components/SearchBar";
 import permissions from "@/data/permissions.json";
 
 export default function index() {
@@ -17,6 +18,9 @@ export default function index() {
           count={permissions.length}
           path="/permissions/add"
         />
+        <div dir="ltr" className="flex justify-between">
+          <SearchBar />
+        </div>
         <CardTable rows={permissions} columns={permissionsColumns} />
       </div>
     </Layout>

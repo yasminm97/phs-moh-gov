@@ -77,6 +77,11 @@ const menuItems = [
         path: "/permissions/add-new-permission",
         icon: <CalendarPlus size={18} />,
       },
+      {
+        name: "اضافة جدارية",
+        path: "/permissions/add-new-certificate",
+        icon: <CalendarPlus size={18} />,
+      },
     ],
   },
   {
@@ -100,7 +105,7 @@ const menuItems = [
 
   {
     name: "تسجيل الخروج",
-    path: "/signout",
+    path: "/signIn",
     icon: <User size={20} />,
   },
 ];

@@ -51,13 +51,18 @@ export default function SignIn() {
       lang="ar"
     >
       <div className="max-w-4xl w-full bg-white shadow-card border border-ministry-soft rounded-xl grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-center justify-center p-8 border-b md:border-b-0 md:border-l border-ministry-soft">
+        <div className="flex flex-col gap-2 items-center justify-center p-8 border-b md:border-b-0 md:border-l border-ministry-soft">
+          <h1 className="text-2xl font-bold text-ministry-charcoal">
+            وزارة الصحة - قسم القطاع الخاص
+          </h1>
+          <h2 className="text-2xl font-semibold text-ministry-charcoal">
+            {" "}
+            برنامج الارشفة الالكترونية DMS
+          </h2>
           <Image
             src={Logo}
             alt="Logo"
-            className="object-contain"
-            width={180}
-            height={180}
+            className="object-contain w-full h-full"
           />
         </div>
 

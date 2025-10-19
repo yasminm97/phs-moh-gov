@@ -1,6 +1,5 @@
-// pages/reports.jsx
 import Layout from "@/components/Layout";
-
+import letters from "@/data/letters.json";
 export default function Reports() {
   return (
     <Layout>
@@ -85,43 +84,19 @@ export default function Reports() {
           </div>
         </div>
 
-        {/* Stats Pills */}
-        {/* <div className="flex gap-4 flex-wrap">
-          {[
-            { label: "إجازة", value: 16 },
-            { label: "كتاب", value: 5 },
-            { label: "طلب", value: 1 },
-            { label: "مذكرة", value: 3 },
-          ].map((stat, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center justify-center w-24 h-24 bg-white rounded-2xl shadow text-center"
-            >
-              <p className="text-xl font-bold text-ministry-charcoal">
-                {stat.value}
-              </p>
-              <span className="text-sm text-gray-600">{stat.label}</span>
-            </div>
-          ))}
-        </div> */}
-
         <div className="bg-white rounded-xl shadow overflow-x-auto">
           <table className="min-w-full text-right">
             <thead className="bg-ministry-green text-white">
               <tr>
-                <th className="px-4 py-3">الرقم</th>
+                <th className="px-4 py-3">رقم الكتاب</th>
                 <th className="px-4 py-3">الموضوع</th>
               </tr>
             </thead>
             <tbody>
-              {[
-                { id: "23", subject: "sdfds" },
-                { id: "12", subject: "sadas" },
-                { id: "2227", subject: "انشاء مستشفى عام سعة 60 سرير" },
-              ].map((row, idx) => (
+              {letters.map((row, idx) => (
                 <tr
                   key={idx}
-                  className="border border-gray-200 hover:bg-gray-50 transition"
+                  className="border border-gray-200 hover:bg-gray-100 transition"
                 >
                   <td className="px-4 py-3">{row.id}</td>
                   <td className="px-4 py-3">{row.subject}</td>

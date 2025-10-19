@@ -3,7 +3,6 @@ import HeaderBar from "../components/HeaderBar";
 import StatsCards from "../components/StatsCards";
 import ChartsSection from "../components/ChartsSection";
 import ImportantList from "../components/ImportantList";
-import Footer from "../components/Footer";
 
 export default function Home() {
   return (
