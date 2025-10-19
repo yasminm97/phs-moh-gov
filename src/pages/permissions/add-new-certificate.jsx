@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Logo from "../../public/logo/qr.png";
 export default function AddMural() {
   return (
     <div dir="rtl" className="p-10 bg-gray-50 min-h-screen">
@@ -40,7 +39,7 @@ export default function AddMural() {
         <div className="absolute left-18 top-30">
           <div className="w-28 h-28 bg-gray-200 flex items-center justify-center">
             <span className="text-xs text-gray-500">
-              <Image src={QR} />
+              <Image src="/logo/qr.png" alt="Logo" width={120} height={120} />
             </span>
           </div>
         </div>

@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/letter-details": "pages/letter-details.js",
-  "/cards": "pages/cards.js"
+  "/home": "pages/home.js",
+  "/permissions/add-new-certificate": "pages/permissions/add-new-certificate.js",
+  "/": "pages/index.js"
 }
