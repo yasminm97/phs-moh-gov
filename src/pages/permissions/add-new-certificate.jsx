@@ -1,5 +1,5 @@
 import Image from "next/image";
-import QR from "public/qr.png";
+import Logo from "../../public/logo/qr.png";
 export default function AddMural() {
   return (
     <div dir="rtl" className="p-10 bg-gray-50 min-h-screen">

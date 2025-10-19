@@ -20,11 +20,6 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/branches/add-new-sub-branch": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/branches/add-new-sub-branch.js"
-    ],
     "/letter-details": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

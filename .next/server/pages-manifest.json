@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/branches/add-new-sub-branch": "pages/branches/add-new-sub-branch.js",
-  "/cards": "pages/cards.js",
-  "/letter-details": "pages/letter-details.js"
+  "/letter-details": "pages/letter-details.js",
+  "/cards": "pages/cards.js"
 }
